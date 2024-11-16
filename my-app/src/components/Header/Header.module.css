@@ -1,0 +1,159 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.containerHeader{
+    width: 100%;
+}
+.headerUst{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+.navUst nav ul {
+    display: flex;
+    gap: 40px;
+}
+.navUst nav ul li {
+    list-style: none;
+}
+.navUst a{
+    text-decoration: none;
+    color: black;
+}
+.wishlist {
+    display: flex;
+    gap: 40px;
+}
+.wishlist .yazi{
+    border-right: 1px solid gray;
+    padding-right: 10px;
+}
+.iconBox{
+    display: flex;
+    gap: 15px;
+}
+.mainHeader{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+.mainHeader ul{
+    display: flex;
+    gap: 30px;
+}
+.mainHeader li{
+    list-style: none;
+
+}
+.mainHeader a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.new{
+    position: absolute;
+    right: 670px;
+    top: 55px;
+    font-size: smaller;
+    font-weight: bolder;
+    background-color: orangered;
+    padding: 3px;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    border-bottom-right-radius: 45%;
+}
+.iconBox2{
+    display: flex;
+    gap: 30px;
+}
+.iconBox2 i{
+    font-size: 30px;
+}
+.headerAlt{
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.headerAlt p{
+    color: white;
+    display: inline;
+    font-size: 18px;
+
+}
+.headerAlt a {
+color: yellow;
+font-size: 18px;
+}
+.menu{
+    width: 100%;
+    background-color: gray;
+    padding: 8px 8px;
+    display: none;
+}
+.menu p {
+right: 10px;
+text-align: right;
+font-size: larger;
+
+}
+.headerAlt .menu i {
+    display:none;
+}
+@media screen and (min-width:300px) and (max-width:576px){
+.headerUst{
+    display: none;
+}
+.navbar{
+    display: none;
+}
+.headerAlt p{
+    display: none;
+}
+.iconBox2{
+    display: none;
+}
+.menu{
+    display: block;
+}
+}
+@media screen and (min-width:577px) and (max-width:770px){
+    .headerAlt{
+        display: none;
+        
+    }
+    .navUst{
+        display: none;
+        
+    }
+    .iconBox{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .navbar{
+        display: none;
+    }
+}
+@media screen and (min-width:771px) and (max-width:1000px){
+.navbar{
+    display: none;
+}
+.menu{
+    display: block;
+    .new{
+        display: none;
+    }
+}
+}
+@media screen and (min-width:1001px) and (max-width:1450px){
+    .new{
+        display: none;
+    }
+}

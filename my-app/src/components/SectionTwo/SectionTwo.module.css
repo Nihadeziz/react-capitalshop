@@ -1,0 +1,88 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.card1 {
+    background-image: url(https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/items1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 28%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 20px;
+}
+
+.card2 {
+    background-image: url(https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/items2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 28%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 20px;
+}
+
+.card3 {
+    background-image: url(https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/items3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 28%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 20px;
+}
+
+.container3 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+@media screen and (min-width:300px) and (max-width:576px) {
+.container3{
+    flex-direction: column;
+    gap: 15px   ;
+}
+.card1{
+    
+    width: 100%;
+}
+.card2{
+   
+    width: 100%;
+}
+.card3{
+   
+    width: 100%;
+}
+
+}
+
+@media screen and (min-width:577px) and (max-width:1000px) {
+.container3{
+    flex-wrap: wrap;
+    gap: 15px   ;
+}
+.card1{
+    
+    width: 49%;
+}
+.card2{
+   
+    width: 49%;
+}
+.card3{
+   
+    width: 49%;
+}
+
+}
